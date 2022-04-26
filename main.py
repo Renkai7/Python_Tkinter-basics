@@ -4,5 +4,10 @@ window = tkinter.Tk()
 window.title("My First GUI Program")
 window.minsize(width=500, height=300)
 
+# Label
+my_label = tkinter.Label(text="I am a Label", font=("Arial", 24, "bold"))
+# makes label appear on screen - won't appear without .pack()
+my_label.pack(side="left")
+
 
 window.mainloop()
