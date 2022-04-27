@@ -13,7 +13,20 @@ my_label["text"] = "New text"
 # my_label.config(text="New Text")
 
 # Button
-button = Button(text="Click Me")
+def button_clicked():
+    # input.get() gets input inside text entry field
+    new_text = input.get()
+    my_label.config(text=new_text)
+    print("I got clicked")
+
+# use command to run functions
+button = Button(text="Click Me", command=button_clicked)
 button.pack()
+
+# Entry
+input = Entry(width=10)
+input.pack()
+
+
 
 window.mainloop()
